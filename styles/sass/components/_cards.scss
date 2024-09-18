@@ -1,0 +1,42 @@
+.card{
+  min-height: 175px;
+  border-radius: 4px;
+  transition: transform .5s cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card-icon {
+  width: 45px;
+}
+
+.card-title {
+  font-size: font-size(font-size-large);
+}
+
+@media only screen and (min-height: 720px) and (max-height: 920px) {
+  .card {
+    min-height: 225px;
+  }
+  .card-icon {
+    width: 50px;
+  }
+}
+
+@media only screen and (min-height: 920px) {
+  .card {
+    min-height: 275px;
+  }
+  .card-title {
+    font-size: font-size(font-size-xlarge);
+  }
+  .card-text {
+    font-size: font-size(font-size-large);
+  }
+  .card-icon {
+    width: 75px;
+  }
+}
